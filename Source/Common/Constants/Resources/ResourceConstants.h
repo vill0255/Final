@@ -1,0 +1,6 @@
+#ifndef RESOURCE_CONSTANTS_H
+#define RESOURCE_CONSTANTS_H
+
+
+
+#endif 
