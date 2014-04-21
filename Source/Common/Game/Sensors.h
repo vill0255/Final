@@ -15,7 +15,7 @@
 class Sensors : public GameObject
 {
 public:
-    Sensors(b2Vec2 position, b2Vec2 size, b2Vec2 linearVelocity, b2Vec2 minLimits, b2Vec2 maxLimits);
+    Sensors(b2Vec2 position, b2Vec2 size);
     ~Sensors();
     
     const char* getType();

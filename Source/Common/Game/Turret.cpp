@@ -119,15 +119,16 @@ Turret::Turret(float x, float y) : GameObject(),
 	////////////////// creating sensors for the level
 	b2BodyDef sensorBodyDef;
 	sensorBodyDef.type = b2_staticBody;
-	sensorBodyDef.position.Set(10,5);
-	sensorBodyDef.angle = 0.0f;
+	sensorBodyDef.position.Set(10,15);
+	
+	sensorBodyDef.angle = 45.0f;
 				
 		//Define the sensor box shape.
 	b2PolygonShape sensorShape;		
-	sensorShape.SetAsBox(0.52,0.52);
+	sensorShape.SetAsBox(.52,.92);
 
 	b2FixtureDef sensorFixture1;
-	sensorFixture1.shape = &sensorShape;
+	sensorFixture1.shape = &sensorShape;	
 	sensorFixture1.isSensor = true;		
 
 	m_sensorBody = Game::getInstance()->createPhysicsBody(&sensorBodyDef,&sensorFixture1);

@@ -144,7 +144,6 @@ void Game::load()
 		addGameObject(new Ground(ground));
 	}
 		break;
-
 		
 	case GameLoadStepPlatforms:
 	{
@@ -152,12 +151,7 @@ void Game::load()
 		float x = getScreenWidth() * 0.01f;
 		float y = getScreenHeight() * 0.1f;
 		addGameObject(new StaticPlatform(b2Helper::screenSpaceToBox2dSpace(x, y), b2Vec2(5.5f, 2.0f)));
-
-		//left wall
-		x = getScreenWidth() * 0.001f;
-		y = getScreenHeight() * 0.65f;
-		addGameObject(new StaticPlatform(b2Helper::screenSpaceToBox2dSpace(x, y), b2Vec2(0.2f, 9.0f)));
-
+		
 		//roof
 		x = getScreenWidth() * 0.523f;
 		y = getScreenHeight() * 0.99f;
@@ -218,16 +212,24 @@ void Game::load()
 		y = getScreenHeight() * 0.5f;
 		addGameObject(new StaticPlatform(b2Helper::screenSpaceToBox2dSpace(x, y), b2Vec2(10.0f, 0.2f), 90.0f));
 							
-		/*x = getScreenWidth() * 0.2f;
+		x = getScreenWidth() * 0.5f;
 		y = getScreenHeight() * 0.55f;
-		float minX = getScreenWidth() * 0.15f;
-		float maxX = getScreenWidth() * 0.25f;
-		addGameObject(new KinematicPlatform(b2Helper::screenSpaceToBox2dSpace(x, y), b2Vec2(2.0f, 0.5f), b2Vec2(2.5f, 0.0f), b2Vec2(minX, y), b2Vec2(maxX, y)));
-*/
+		float minX = getScreenWidth() * 0.350f;
+		float maxX = getScreenWidth() * 0.650f;
+		float minY = getScreenHeight() * 0.450f;
+		float maxY = getScreenHeight() * 0.60f;
+		addGameObject(new KinematicPlatform(b2Helper::screenSpaceToBox2dSpace(x, y), b2Vec2(2.0f, 0.2f), b2Vec2(2.5f, 0.0f), b2Vec2(minX, minY), b2Vec2(maxX, maxY)));
+
+		x = getScreenWidth() * 0.7f;
+		y = getScreenHeight() * 0.75f;
+		 minX = getScreenWidth() * 0.40f;
+		 maxX = getScreenWidth() * 0.750f;
+		addGameObject(new KinematicPlatform(b2Helper::screenSpaceToBox2dSpace(x, y), b2Vec2(1.0f, 0.5f), b2Vec2(0.5f, 0.0f), b2Vec2(minX, y), b2Vec2(maxX, y)));
+
 		x = getScreenWidth() *0.990f;
 		y = getScreenHeight() * 0.50f;
-	    float minX = getScreenWidth() * 0.80f;
-		 float maxX = getScreenWidth() * 0.990f;
+	     minX = getScreenWidth() * 0.80f;
+		 maxX = getScreenWidth() * 0.990f;
 		addGameObject(new KinematicPlatform(b2Helper::screenSpaceToBox2dSpace(x, y), b2Vec2(2.0f, 0.5f), b2Vec2(2.5f, 0.0f), b2Vec2(minX, y), b2Vec2(maxX, y)));
 	}
 
