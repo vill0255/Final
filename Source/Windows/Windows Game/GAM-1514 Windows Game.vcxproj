@@ -103,6 +103,7 @@
     <ClCompile Include="..\..\Common\Game\KinematicPlatform.cpp" />
     <ClCompile Include="..\..\Common\Game\ParallaxBackground.cpp" />
     <ClCompile Include="..\..\Common\Game\Projectile.cpp" />
+    <ClCompile Include="..\..\Common\Game\Sensors.cpp" />
     <ClCompile Include="..\..\Common\Game\StaticPlatform.cpp" />
     <ClCompile Include="..\..\Common\Game\Turret.cpp" />
     <ClCompile Include="..\..\Common\Input\InputConstants.cpp" />
@@ -221,6 +222,7 @@
     <ClInclude Include="..\..\Common\Game\KinematicPlatform.h" />
     <ClInclude Include="..\..\Common\Game\ParallaxBackground.h" />
     <ClInclude Include="..\..\Common\Game\Projectile.h" />
+    <ClInclude Include="..\..\Common\Game\Sensors.h" />
     <ClInclude Include="..\..\Common\Game\StaticPlatform.h" />
     <ClInclude Include="..\..\Common\Game\Turret.h" />
     <ClInclude Include="..\..\Common\Input\Input.h" />

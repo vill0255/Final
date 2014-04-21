@@ -433,6 +433,9 @@
     <ClCompile Include="..\..\Common\Game\KinematicPlatform.cpp">
       <Filter>Source Files\Game</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Common\Game\Sensors.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="OpenGLWindow.h">
@@ -781,6 +784,9 @@
       <Filter>Source Files\Game</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Common\Game\Turret.h">
+      <Filter>Source Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Game\Sensors.h">
       <Filter>Source Files\Game</Filter>
     </ClInclude>
   </ItemGroup>

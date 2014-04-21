@@ -10,6 +10,7 @@ enum
 {
 	GameLoadStepInitial = 0,
 	GameLoadStepWorld,
+	GameLoadStepSensors,
 	GameLoadStepGround,
 	GameLoadStepPlatforms,
 	GameLoadStepTurret,

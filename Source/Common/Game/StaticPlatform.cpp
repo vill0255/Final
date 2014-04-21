@@ -13,7 +13,7 @@ StaticPlatform::StaticPlatform(b2Vec2 position, b2Vec2 size, float angle, float 
 {
     unsigned short platformMask = PlatformCategory | TurretCategory | ProjectileCategory;
     m_Body = Game::getInstance()->createBox(position, size, angle, b2_staticBody, PlatformCategory, platformMask);
-    m_Body->SetUserData(this);
+    m_Body->SetUserData(this);	
     m_Body->GetFixtureList()->SetRestitution(restitution);
 }
 

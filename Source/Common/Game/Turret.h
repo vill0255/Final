@@ -30,6 +30,7 @@ public:
 private:
     b2Vec2 getTrajectoryPoint(float step);
     
+	b2Body* m_sensorBody;
     b2Body* m_Barrel;
     b2RevoluteJoint* m_BarrelJoint;
     b2Vec2 m_ProjectileVelocity;

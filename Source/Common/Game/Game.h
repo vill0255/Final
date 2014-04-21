@@ -86,6 +86,9 @@ private:
 
 	std::vector<GameObject*> m_GameObjects;
 	Turret* m_Turret;
+
+	 b2Body* m_sensorBody;
+	OpenGLTexture * m_BackgroundTexture;
 };
 
 #endif

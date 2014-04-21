@@ -24,15 +24,22 @@ Game* Game::getInstance()
 
 Game::Game() :
 m_LoadStep(0),
+m_sensorBody(NULL),
 m_World(NULL),
 m_DebugDraw(NULL),
 m_Turret(NULL)
 {
-
+	m_BackgroundTexture = new OpenGLTexture("background");
 }
 
 Game::~Game()
 {
+	if(m_BackgroundTexture !=NULL)
+	{
+		delete m_BackgroundTexture;
+		m_BackgroundTexture = 0;
+	}
+
 	for (int i = 0; i < m_GameObjects.size(); i++)
 	{
 		delete m_GameObjects.at(i);
@@ -103,6 +110,12 @@ void Game::load()
 		m_World->SetDebugDraw(m_DebugDraw);
 #endif
 	}
+		break;		
+
+	case GameLoadStepSensors:
+	{	
+		
+	}
 		break;
 
 	case GameLoadStepGround:
@@ -132,6 +145,7 @@ void Game::load()
 	}
 		break;
 
+		
 	case GameLoadStepPlatforms:
 	{
 		//cannon platform
@@ -149,26 +163,71 @@ void Game::load()
 		y = getScreenHeight() * 0.99f;
 		addGameObject(new StaticPlatform(b2Helper::screenSpaceToBox2dSpace(x, y), b2Vec2(19.0f, 0.2f), 180.0f));
 
-		//basketball pole
+		//far right pole pole
 		x = getScreenWidth() * 0.95f;
 		y = getScreenHeight() * 0.15f;
 		addGameObject(new StaticPlatform(b2Helper::screenSpaceToBox2dSpace(x, y), b2Vec2(3.0f, 0.3f),  90.0f));
 
+		//2nd from the right pole
+		x = getScreenWidth() * 0.90f;
+		y = getScreenHeight() * 0.15f;
+		addGameObject(new StaticPlatform(b2Helper::screenSpaceToBox2dSpace(x, y), b2Vec2(3.0f, 0.3f),  90.0f));
+
+		//3rd from the right pole
+		x = getScreenWidth() * 0.83f;
+		y = getScreenHeight() * 0.15f;
+		addGameObject(new StaticPlatform(b2Helper::screenSpaceToBox2dSpace(x, y), b2Vec2(9.0f, 0.3f),  90.0f));
+
+		//4th from the right pole
+		x = getScreenWidth() * 0.78f;
+		y = getScreenHeight() * 0.15f;
+		addGameObject(new StaticPlatform(b2Helper::screenSpaceToBox2dSpace(x, y), b2Vec2(6.0f, 0.3f),  90.0f));
+		
+		//5th from the right
+		x = getScreenWidth() * 0.70f;
+		y = getScreenHeight() * 0.15f;
+		addGameObject(new StaticPlatform(b2Helper::screenSpaceToBox2dSpace(x, y), b2Vec2(4.5f, 0.3f),  90.0f));
+		
+		//6th from the right
+		x = getScreenWidth() * 0.64f;
+		y = getScreenHeight() * 0.15f;
+		addGameObject(new StaticPlatform(b2Helper::screenSpaceToBox2dSpace(x, y), b2Vec2(5.0f, 0.3f),  90.0f));
+		
+		//7th from the right
+		x = getScreenWidth() * 0.56f;
+		y = getScreenHeight() * 0.15f;
+		addGameObject(new StaticPlatform(b2Helper::screenSpaceToBox2dSpace(x, y), b2Vec2(7.5f, 0.3f),  90.0f));
+		
+		//8th from the right
+		x = getScreenWidth() * 0.50f;
+		y = getScreenHeight() * 0.15f;
+		addGameObject(new StaticPlatform(b2Helper::screenSpaceToBox2dSpace(x, y), b2Vec2(6.7f, 0.3f),  90.0f));
+		
+		//9th from the right
+		x = getScreenWidth() * 0.43f;
+		y = getScreenHeight() * 0.15f;
+		addGameObject(new StaticPlatform(b2Helper::screenSpaceToBox2dSpace(x, y), b2Vec2(4.5f, 0.3f),  90.0f));
+		
+		//10th from the right
+		x = getScreenWidth() * 0.36f;
+		y = getScreenHeight() * 0.15f;
+		addGameObject(new StaticPlatform(b2Helper::screenSpaceToBox2dSpace(x, y), b2Vec2(5.5f, 0.3f),  90.0f));
+		
 		//right wall
 		x = getScreenWidth() * 0.999f;
 		y = getScreenHeight() * 0.5f;
 		addGameObject(new StaticPlatform(b2Helper::screenSpaceToBox2dSpace(x, y), b2Vec2(10.0f, 0.2f), 90.0f));
 							
-		x = getScreenWidth() * 0.2f;
+		/*x = getScreenWidth() * 0.2f;
 		y = getScreenHeight() * 0.55f;
 		float minX = getScreenWidth() * 0.15f;
 		float maxX = getScreenWidth() * 0.25f;
 		addGameObject(new KinematicPlatform(b2Helper::screenSpaceToBox2dSpace(x, y), b2Vec2(2.0f, 0.5f), b2Vec2(2.5f, 0.0f), b2Vec2(minX, y), b2Vec2(maxX, y)));
-
-		x = getScreenWidth() *0.9f;
+*/
+		x = getScreenWidth() *0.990f;
 		y = getScreenHeight() * 0.50f;
-	     minX = getScreenWidth() * 0.80f;
-		 maxX = getScreenWidth() * 0.95f;
+	    float minX = getScreenWidth() * 0.80f;
+		 float maxX = getScreenWidth() * 0.990f;
 		addGameObject(new KinematicPlatform(b2Helper::screenSpaceToBox2dSpace(x, y), b2Vec2(2.0f, 0.5f), b2Vec2(2.5f, 0.0f), b2Vec2(minX, y), b2Vec2(maxX, y)));
 	}
 
@@ -220,7 +279,8 @@ void Game::update(double delta)
 }
 
 void Game::paint()
-{
+{	
+
 	//While the game is loading, the load method will be called once per update
 	if (isLoading() == true)
 	{
@@ -251,6 +311,8 @@ void Game::paint()
 
 		return;
 	}
+
+	OpenGLRenderer::getInstance()->drawTexture(m_BackgroundTexture,0.0f,0.0f);
 
 #if _DEBUG
 	if (m_World != NULL)

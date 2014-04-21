@@ -3,7 +3,6 @@
 //  GameDevFramework
 //
 
-
 #include "Turret.h"
 #include "Projectile.h"
 #include "../Utils/Math/MathUtils.h"
@@ -85,7 +84,7 @@ Turret::Turret(float x, float y) : GameObject(),
     fixtureDef.filter.maskBits = turretMask;
     m_Body->CreateFixture(&fixtureDef);
     
-    //Initialize the barrel def
+   //////// //Initialize the barrel def
     b2BodyDef barrelDef;
     barrelDef.type = b2_dynamicBody;
     barrelDef.position = b2Helper::screenSpaceToBox2dSpace(x, y);
@@ -116,6 +115,23 @@ Turret::Turret(float x, float y) : GameObject(),
     m_BarrelJoint = (b2RevoluteJoint*)Game::getInstance()->createJoint(&barrelJointDef);
     
     m_Barrel->SetTransform(m_Barrel->GetPosition(), MathUtils::degressToRadians(15));
+
+	////////////////// creating sensors for the level
+	b2BodyDef sensorBodyDef;
+	sensorBodyDef.type = b2_staticBody;
+	sensorBodyDef.position.Set(10,5);
+	sensorBodyDef.angle = 0.0f;
+				
+		//Define the sensor box shape.
+	b2PolygonShape sensorShape;		
+	sensorShape.SetAsBox(0.52,0.52);
+
+	b2FixtureDef sensorFixture1;
+	sensorFixture1.shape = &sensorShape;
+	sensorFixture1.isSensor = true;		
+
+	m_sensorBody = Game::getInstance()->createPhysicsBody(&sensorBodyDef,&sensorFixture1);
+			
 }
 
 Turret::~Turret()
