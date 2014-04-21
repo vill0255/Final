@@ -1,0 +1,148 @@
+﻿Build started 4/19/2014 4:39:03 PM.
+     1>Project "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\Windows Game\GAM-1514 Windows Game.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\GAM-1514 Windows Game.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USE_MATH_DEFINES /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\\" /Fd"C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\Common\Game\Game.cpp
+         Game.cpp
+     1>c:\users\sam villeneuve\desktop\final assignment\source\common\opengl\openglcolor.h(67): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\sam villeneuve\desktop\final assignment\source\common\opengl\openglcolor.h(67): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\sam villeneuve\desktop\final assignment\source\common\opengl\openglcolor.h(67): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\sam villeneuve\desktop\final assignment\source\common\game\game.cpp(36): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sam villeneuve\desktop\final assignment\source\common\game\game.cpp(212): warning C4244: 'argument' : conversion from 'double' to 'float32', possible loss of data
+     1>c:\users\sam villeneuve\desktop\final assignment\source\common\game\game.cpp(216): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sam villeneuve\desktop\final assignment\source\common\game\game.cpp(263): warning C4018: '<' : signed/unsigned mismatch
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Application\GAM-1514 Windows Game.exe" /INCREMENTAL /NOLOGO /LIBPATH:..\Dependencies\DevIL\lib opengl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\GAM-1514 Windows Game.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\Application\GAM-1514 Windows Game.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Application\GAM-1514 Windows Game.lib" /MACHINE:X86 "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\GAM-1514 Windows Game.exe.embed.manifest.res"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\AppConstants.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\GameConstants.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\ResourceConstants.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\BackgroundLayer.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\Game.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\GameObject.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\Ground.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\KinematicPlatform.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\ParallaxBackground.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\Projectile.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\StaticPlatform.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\Turret.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\InputConstants.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\InputEvent.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\InputListener.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\InputManager.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\KeyboardEvent.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\MouseEvent.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\b2DebugDraw.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\b2Helper.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\b2BroadPhase.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\b2CollideCircle.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\b2CollideEdge.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\b2CollidePolygon.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\b2Collision.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\b2Distance.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\b2DynamicTree.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\b2TimeOfImpact.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\b2ChainShape.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\b2CircleShape.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\b2EdgeShape.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\b2PolygonShape.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\b2BlockAllocator.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\b2Draw.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\b2Math.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\b2Settings.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\b2StackAllocator.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\b2Timer.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\b2Body.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\b2ContactManager.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\b2Fixture.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\b2Island.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\b2World.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\b2WorldCallbacks.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\b2ChainAndCircleContact.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\b2ChainAndPolygonContact.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\b2CircleContact.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\b2Contact.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\b2ContactSolver.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\b2EdgeAndCircleContact.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\b2EdgeAndPolygonContact.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\b2PolygonAndCircleContact.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\b2PolygonContact.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\b2DistanceJoint.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\b2FrictionJoint.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\b2GearJoint.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\b2Joint.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\b2MotorJoint.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\b2MouseJoint.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\b2PrismaticJoint.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\b2PulleyJoint.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\b2RevoluteJoint.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\b2RopeJoint.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\b2WeldJoint.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\b2WheelJoint.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\b2Rope.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\json_reader.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\json_value.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\json_writer.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\png.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\pngerror.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\pngget.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\pngmem.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\pngpread.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\pngread.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\pngrio.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\pngrtran.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\pngrutil.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\pngset.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\pngtrans.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\pngwio.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\pngwrite.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\pngwtran.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\pngwutil.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\adler32.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\compress.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\crc32.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\deflate.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\gzclose.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\gzlib.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\gzread.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\gzwrite.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\infback.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\inffast.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\inflate.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\inftrees.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\trees.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\uncompr.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\zutil.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\OpenGLAnimatedTexture.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\OpenGLRenderer.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\OpenGLTexture.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\OpenGLTextureCache.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\OpenGLTextureLoader.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\OpenGLTextureManager.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\Screen.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\ScreenManager.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\Logger.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\GDRandom.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\MathUtils.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\ResourceUtils.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\Win32Constants.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\Win32Game.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\Main.obj"
+         "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\OpenGLWindow.obj"
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\GAM-1514 Windows Game.exe.embed.manifest" /manifest "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\GAM-1514 Windows Game.exe.intermediate.manifest"
+         All outputs are up-to-date.
+       LinkEmbedManifest:
+         All outputs are up-to-date.
+         GAM-1514 Windows Game.vcxproj -> C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Application\GAM-1514 Windows Game.exe
+       FinalizeBuildStatus:
+         Deleting file "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\GAM-1514 Windows Game.unsuccessfulbuild".
+         Touching "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\\Build Files\Debug\GAM-1514 Windows Game.lastbuildstate".
+     1>Done Building Project "C:\Users\Sam Villeneuve\Desktop\Final Assignment\Source\Windows\Windows Game\GAM-1514 Windows Game.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.56
